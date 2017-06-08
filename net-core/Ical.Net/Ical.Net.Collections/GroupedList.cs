@@ -159,13 +159,6 @@ namespace Ical.Net.Collections
                 list.RemoveAt(i);
             }
             return true;
-
-            if (!_lists.Remove(_dictionary[group]))
-            {
-                return false;
-            }
-
-            return _dictionary.Remove(group);
         }
 
         public virtual bool Contains(TItem item)
